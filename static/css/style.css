@@ -1,0 +1,23 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card__box {
+    /* width: 240px; */
+    width: calc(33.333% - 16px);
+    margin: 8px;
+    height: 280px;
+    border-radius: 4px;
+    box-shadow: 5px 10px 4px -2px #888888;
+}
+
+.card__img {
+    display: block;
+    background-color: gray;
+    height: 160px;
+}
+
+.card__text {
+    padding: 8px;
+}
