@@ -16,5 +16,9 @@ def favorite():
 def diy():
     return render_template('diy.html')
 
+@app.route('/creator')
+def creator():
+    return render_template('creator.html')
+
 if __name__ == "__main__":
     app.run()
