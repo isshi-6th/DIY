@@ -12,6 +12,16 @@
     box-shadow: 5px 10px 4px -2px #888888;
 }
 
+.creator_remodeled_list {
+    text-align: left;
+}
+
+.creator {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 .card__img {
     display: block;
     background-color: gray;
@@ -20,6 +30,14 @@
 
 .card__text {
     padding: 8px;
+}
+
+.creator_remodeled_list {
+    width: calc(33.333% - 16px);
+    margin: 8px;
+    height: 280px;
+    border-radius: 4px;
+    box-shadow: 5px 10px 4px -2px #888888;
 }
 
 @charset "UTF-8";
