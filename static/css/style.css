@@ -1,4 +1,5 @@
 .card {
+    padding-top: 1px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -23,7 +24,6 @@
 }
 
 @charset "UTF-8";
-
 
 
 html {
@@ -136,6 +136,34 @@ div.more2 {
     line-height: 35px;
     padding: 0 30px 10px 0;
     font-weight: bold;
+}
+
+.diy_list_title {
+    padding-top: 20px;
+    margin-top: 15px;
+    text-align: left;
+    line-height: 1px;
+}
+
+.remodeled_list {
+    padding-top: 20px;
+    margin-top: 15px;
+    text-align: left;
+    line-height: 1px;
+}
+
+.interior_title {
+    padding-top: 20px;
+    margin-top: 15px;
+    text-align: left;
+    line-height: 1px;
+}
+
+.exterior_title {
+    padding-top: 20px;
+    margin-top: 15px;
+    text-align: left;
+    line-height: 1px;
 }
 
 footer {
