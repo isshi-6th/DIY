@@ -12,15 +12,52 @@
     box-shadow: 5px 10px 4px -2px #888888;
 }
 
-.creator_remodeled_list {
+.creator_titile {
+    margin-top: 40px;
     text-align: left;
 }
 
-.creator {
+.creator__list {
     display: flex;
     flex-wrap: wrap;
 }
 
+.creator__box {
+    /* width: 240px; */
+    width: calc(33.333% - 16px);
+    margin: 8px;
+    height: 280px;
+    border-radius: 4px;
+    box-shadow: 5px 10px 4px -2px #888888;
+}
+
+.creator__interior__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.creator__interior__box {
+    /* width: 240px; */
+    width: calc(33.333% - 16px);
+    margin: 8px;
+    height: 280px;
+    border-radius: 4px;
+    box-shadow: 5px 10px 4px -2px #888888;
+}
+
+.creator__exterior__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.creator__exterior__box {
+    /* width: 240px; */
+    width: calc(33.333% - 16px);
+    margin: 8px;
+    height: 280px;
+    border-radius: 4px;
+    box-shadow: 5px 10px 4px -2px #888888;
+}
 
 .card__img {
     display: block;
