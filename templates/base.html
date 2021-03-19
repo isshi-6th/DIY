@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="top.html">ホーム</a></li>
+            <li><a href="diy.html">DIY</a></li>
+            <li><a href="creater.html">クリエイター職人</a></li>
+            <!-- <li><a href="#sec4">まとめ</a></li> -->
+        </ul>
+    </header>
+    {% block content %}
+
+    {% endblock %}
+    <footer>
+        <div class="content">
+            <a class="link_button" href="my_login.html">
+                マイページ
+            </a>
+            <a class="link_button" href="my_account.html">
+                投稿
+            </a>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>
