@@ -6,7 +6,7 @@ app.secret_key = 'sunabakoza'
 
 @app.route('/')
 def toppage():
-    return render_template('toppage.html')
+    return render_template('top.html')
 
 @app.route('/favorite')
 def favorite():
