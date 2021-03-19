@@ -12,11 +12,9 @@ def toppage():
 def favorite():
     return render_template('favorite.html')
 
-@app.route('/creator')
-def creator():
-    return render_template('creator.html')
-
-
+@app.route('/diy')
+def diy():
+    return render_template('diy.html')
 
 if __name__ == "__main__":
     app.run()
