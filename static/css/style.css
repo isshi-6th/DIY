@@ -1,3 +1,9 @@
+@charset "UTF-8";
+
+html {
+    overflow-y: scroll;
+}
+
 .card {
     display: flex;
     flex-wrap: wrap;
@@ -22,13 +28,11 @@
     padding: 8px;
 }
 
-@charset "UTF-8";
 
 
 
-html {
-    overflow-y: scroll;
-}
+
+
 
 body {
     background: #fff;
@@ -185,4 +189,497 @@ footer .content {
 html,
 body {
     height: 100%;
+}
+
+#form {
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px 20px;
+    border: 1px solid #555;
+    background-color: paleturquoise;
+}
+
+.login {
+    background-color: paleturquoise;
+}
+
+
+form p {
+    font-size: 16px;
+}
+
+.form-title {
+    text-align: center;
+}
+
+.mail,
+.pass {
+    margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 300px;
+    padding: 4px;
+    font-size: 14px;
+}
+
+.submit {
+    text-align: right;
+}
+
+/* font */
+#form p {
+    color: #077685;
+    font-weight: bold;
+}
+
+#form .form-title {
+    font-family: Arial;
+    font-size: 100px;
+    color: white;
+}
+
+#form {
+    /* -webkit-border-radius: 6px; */
+    /* -moz-border-radius: 6px;
+    border-radius: 6px; */
+    /* -webkit-box-shadow: 0px 1px 10px #488a9e;
+    -moz-box-shadow: 0px 1px 10px #488a9e; */
+    /* box-shadow: 0px 1px 10px #488a9e; */
+    border: none;
+    /* background: paleturquoise; */
+}
+
+#form .form-title {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #4eb4c2;
+    margin-bottom: 20px;
+}
+
+.submit input {
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 8px 6px #e3e3e3;
+    -moz-box-shadow: 0px 8px 6px #e3e3e3;
+    box-shadow: 0px 8px 6px #e3e3e3;
+    border: solid #f5fdff 4px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#61c7e0), to(#418da8));
+    background: -moz-linear-gradient(top, #61c7e0, #418da8);
+    margin: 0 0 20px 0;
+    font-weight: bold;
+}
+
+.submit input:hover {
+    background: #37a4bf;
+}
+
+.btn-social-icon-facebook {
+    font-family: "Font Awesome 5 Brands";
+    content: '\f082';
+    color: #3B5998;
+}
+
+#form p a {
+    text-decoration: none;
+    color: gray;
+
+}
+
+#form .comment3 {
+    color: white;
+    text-align: center;
+    padding: 40px 0 0 0;
+}
+
+#form .comment1,
+#form .comment2 {
+    text-align: right;
+    padding: 20px 0 0 0;
+
+}
+
+#form .comment1 a {
+    margin: 50px 0px 0px 0;
+    color: white;
+}
+
+#form .comment2 a {
+    padding: 0px 0px 30px 0;
+    color: white;
+}
+
+.inner {
+    padding: 20px 10px;
+
+    justify-content: space-evenly;
+}
+
+#form p {
+    color: white;
+}
+
+/* ここから */
+.btn-social-circle {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #FFF;
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: inset 0 2px 0px rgba(255, 255, 255, 0.25), inset 0 -2px 0px rgba(0, 0, 0, 0.18);
+    transition: .2s;
+    /* display: inline-block; */
+    /* height: 10rem; */
+}
+
+.btn-social-circle .fa {
+    /* line-height: 30px; */
+    height: 10rem;
+    text-align: center;
+}
+
+.btn-social-circle:hover {
+    box-shadow: none;
+}
+
+.btn-social-circle--twitter {
+    background: #1da1f3;
+    border: solid 5px #1da1f3;
+}
+
+.btn-social-circle--facebook {
+    background: #3b75d4;
+    border: solid 5px #3b75d4;
+}
+
+.allBtn {
+    text-align: center;
+    padding: 10px;
+}
+
+.checkbox {
+    color: black;
+}
+
+#form {
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px 20px;
+    border: none
+}
+
+form p {
+    font-size: 16px;
+}
+
+.form-title {
+    text-align: center;
+}
+
+.mail,
+.pass {
+    margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 300px;
+    padding: 4px;
+    font-size: 14px;
+}
+
+.submit {
+    text-align: right;
+    padding: 20px 0px;
+}
+
+/* font */
+#form p {
+    color: black;
+    /* font-weight: bold; */
+}
+
+#form .form-title {
+    font-family: Arial;
+    font-size: 100px;
+    color: #4eb4c2;
+    font-weight: bold;
+}
+
+#form {
+    /* -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 1px 10px #488a9e;
+    -moz-box-shadow: 0px 1px 10px #488a9e;
+    box-shadow: 0px 1px 10px #488a9e;
+    border: solid #4eb4c2 1px; */
+    background: white;
+}
+
+#form .form-title {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #4eb4c2;
+    margin-bottom: 20px;
+}
+
+.submit input {
+    font-family: Arial;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 8px 6px #e3e3e3;
+    -moz-box-shadow: 0px 8px 6px #e3e3e3;
+    box-shadow: 0px 8px 6px #e3e3e3;
+    border: solid #f5fdff 4px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#61c7e0), to(#418da8));
+    background: -moz-linear-gradient(top, #61c7e0, #418da8);
+}
+
+.submit input:hover {
+    background: #37a4bf;
+}
+
+#form p a {
+    text-decoration: none;
+    color: black;
+}
+
+.formcomment {
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+#form .comment4 {
+    padding: 50px 0px 0px 0
+}
+
+.pass3 {
+    padding: 30px 0 0 0;
+}
+
+.comment5 {
+    text-align: right;
+    padding: 10px 60px 0 0;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.comment6 {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#form .p .check {
+    color: black;
+}
+
+.table1 {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table1 th {
+    border-right: 1px solid #000000;
+    /* border-left: 1px solid #000000; */
+    font-weight: normal;
+}
+
+.table1 td {
+    border-right: 1px solid #000000;
+    /* border-left: 1px solid #000000; */
+    font-weight: bold;
+
+}
+
+td.cell1 {
+    border-right: none;
+}
+
+th.cell1 {
+    border-right: none;
+}
+
+.box1 {
+    padding: 0.1em 1em;
+    margin: 0.5em 0;
+    color: black;
+    background: #eeeaec;
+    border-top: solid 8px #9799a7;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.box1 p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.table2 {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid white;
+}
+
+.table2 tr {
+    border-width: 1px 0px;
+}
+
+.table2 th {
+    padding: 10px;
+}
+
+.table2 .td1 {
+    border-width: 1px 0px;
+    padding: 3px 10px;
+    border-color: #9799a7;
+    border-style: solid;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.table2 .td2 {
+    border-width: 1px 0px;
+    padding: 3px 20px 3px 250px;
+    border-color: #9799a7;
+    text-decoration: none;
+    border-style: solid;
+}
+
+tbody tr td {
+    text-align: center;
+}
+
+.table2 .td2 a {
+    color: black;
+    text-decoration: none;
+}
+
+#section1-inner {
+    text-align: center;
+}
+
+.profile {
+    margin: 0.1em;
+}
+
+.profile a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.user {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.creater {
+    background-color: rgba(28, 194, 130, 0.836);
+    color: white;
+    font-size: 14px;
+    margin: 0 120px;
+}
+
+.address {
+    font-size: 14px;
+}
+
+p.ordermade {
+    padding: 10px 0 0 0;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: #333;
+}
+
+/*----------------------------
+  * メニュー本体
+  *----------------------------*/
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.menu__item {
+    width: 100%;
+    height: auto;
+    padding: .5em 1em;
+    text-align: center;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/*----------------------------
+  * アニメーション部分
+  *----------------------------*/
+
+/* アニメーション前のメニューの状態 */
+.menu {
+    transform: translateX(100vw);
+    transition: all .3s linear;
+}
+
+/* アニメーション後のメニューの状態 */
+.menu.is-active {
+    transform: translateX(0);
+}
+
+#wrapper a {
+    text-decoration: none;
+    /* position: fixed;
+    right: 20px; */
+    top: 40px;
+    color: black;
 }

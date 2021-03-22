@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>my_account</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <link rel="stylesheet" type="text/css" media="screen and ( max-width:480px )" href="my_account.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="form">
+        <p class="form-title">DIY</p>
+        <p class="comment6">アカウントを作成</p>
+        <form action="post" class="formcomment">
+            <p>名前</p>
+            <p class="name"><input type="email" name="name" /></p>
+            <p>メールアドレス</p>
+            <p class="mail"><input type="email" name="maik" /></p>
+            <p class="pass3">パスワード</p>
+            <p class="pass1"><input type="password" name="pass1" /></p>
+            <p>もう一度パスワードを入力してください</p>
+            <p class="pass2"><input type="password" name="pass2" /></p>
+            <p class="submit"><input type="submit" value="DIYアカウントを作成" /></p>
+            <p class="comment4">すでにアカウントをお持ちですか？</p>
+            <p class="comment5"><a href="XXX.html">ログイン</a></p>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
+
+{% endblock %}
