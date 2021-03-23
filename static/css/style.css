@@ -84,11 +84,20 @@ html {
     box-shadow: 5px 10px 4px -2px #888888;
 }
 
+.create_post {
+    margin-top: 40px;
+    text-align: left;
+}
 
+.type {
+    text-align: center;
+}
 
-
-
-
+.type_post {
+    text-align: left;
+    width: 100%;
+    height: 400px;
+}
 
 body {
     background: #fff;
