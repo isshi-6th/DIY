@@ -5,11 +5,59 @@ html {
 }
 
 .card {
+    padding-top: 1px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .card__box {
+    /* width: 240px; */
+    width: calc(33.333% - 16px);
+    margin: 8px;
+    height: 280px;
+    border-radius: 4px;
+    box-shadow: 5px 10px 4px -2px #888888;
+}
+
+.creator_titile {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.creator__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.creator__box {
+    /* width: 240px; */
+    width: calc(33.333% - 16px);
+    margin: 8px;
+    height: 280px;
+    border-radius: 4px;
+    box-shadow: 5px 10px 4px -2px #888888;
+}
+
+.creator__interior__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.creator__interior__box {
+    /* width: 240px; */
+    width: calc(33.333% - 16px);
+    margin: 8px;
+    height: 280px;
+    border-radius: 4px;
+    box-shadow: 5px 10px 4px -2px #888888;
+}
+
+.creator__exterior__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.creator__exterior__box {
     /* width: 240px; */
     width: calc(33.333% - 16px);
     margin: 8px;
@@ -26,6 +74,14 @@ html {
 
 .card__text {
     padding: 8px;
+}
+
+.creator_remodeled_list {
+    width: calc(33.333% - 16px);
+    margin: 8px;
+    height: 280px;
+    border-radius: 4px;
+    box-shadow: 5px 10px 4px -2px #888888;
 }
 
 
@@ -54,9 +110,11 @@ a {
 }
 
 img {
+    width: 240;
     border: 0px;
     vertical-align: bottom;
 }
+
 
 ß body {
     font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", "Meiryo", "HGPｺﾞｼｯｸM", "Osaka", "ＭＳ Ｐゴシック", sans-serif, Century Gothic, Arial;
@@ -138,6 +196,34 @@ div.more2 {
     line-height: 35px;
     padding: 0 30px 10px 0;
     font-weight: bold;
+}
+
+.diy_list_title {
+    padding-top: 20px;
+    margin-top: 15px;
+    text-align: left;
+    line-height: 1px;
+}
+
+.remodeled_list {
+    padding-top: 20px;
+    margin-top: 15px;
+    text-align: left;
+    line-height: 1px;
+}
+
+.interior_title {
+    padding-top: 20px;
+    margin-top: 15px;
+    text-align: left;
+    line-height: 1px;
+}
+
+.exterior_title {
+    padding-top: 20px;
+    margin-top: 15px;
+    text-align: left;
+    line-height: 1px;
 }
 
 footer {
@@ -680,6 +766,21 @@ p.ordermade {
     text-decoration: none;
     /* position: fixed;
     right: 20px; */
-    top: 40px;
-    color: black;
+    top: 200px;
+    color: gray;
+    text-align: left;
+}
+
+.menu__itembox {
+    border: solid 2px skyblue;
+    font-size: 14px;
+}
+
+.menu__itemtitle {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+span.back-text {
+    text-align: left;
 }

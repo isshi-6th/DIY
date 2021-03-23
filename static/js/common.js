@@ -3,8 +3,8 @@ $(document).ready(function () {
 });
 
 
-<
-a href = "javascript:history.go(-1)" > [戻る] < /a>
+// <
+// a href = "javascript:history.go(-1)" > [戻る] < /a>
 
 
 $(function () {
