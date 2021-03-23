@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<body class="login">
+    <div id="form">
+        <p class="form-title">DIY</p>
+        <form action="post" class="formcomment1">
+            <p>メール</p>
+            <p class="mail"><input type="email" name="mail" /></p>
+            <p>パスワード</p>
+            <p class="pass"><input type="password" name="pass" /></p>
+            <p class="check"><input type="checkbox" class="checkbox" name="checkbox" />　ログイン情報を保持する</p>
+            <p class="submit"><input type="submit" value="ログイン" /></p>
+            <p class="comment1"><a href="XXX.html">パスワードをお忘れですか？</a></p>
+            <p class="comment2"><a href="XXX.html">IDをお持ちでないですか？</a></p>
+            <p class="comment3">または以下のIDでもログインできます</p>
+
+            <div class="allBtn">
+                <a href="#" class="btn-social-circle btn-social-circle--twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="btn-social-circle btn-social-circle--facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+
+
+            </div>
+        </form>
+    </div>
+
+</body>
+
+<!-- </html> -->
+
+{% endblock %}

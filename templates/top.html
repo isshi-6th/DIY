@@ -1,114 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="サイトをキーワードで説明">
-    <meta name="description" content="どんなサイトかを短い文章で説明">
-    <meta name="viewport" content="width=device-width, initial-scale=1.user-scalable=1">
-    <link rel="icon" href="favicon.ico">
+{% block content %}
 
-    <link rel='stylesheet' href="{{ url_for('static', filename='css/style.css') }}">
 
-    <title>Document</title>
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
-</head>
+<div id="wrapper">
 
-<body>
-    <div id="wrapper">
-        <header>
-            <ul>
-                <li><a href="top.html">ホーム</a></li>
-                <li><a href="diy.html">DIY</a></li>
-                <li><a href="creater.html">クリエイター職人</a></li>
-                <!-- <li><a href="#sec4">まとめ</a></li> -->
-            </ul>
-        </header>
-        <div>
-            <h1>旬のDIY投稿</h1>
-        </div>
-        <section id="sec2">
-            <div class="box-row">
-                <div class="box-item">
-                    <a href="diy.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}" alt="次へ"></a>
-                    <a href="diy.html" class="setumei">写真1の説明写真1の説明写真1の説明写真1の説明</a>
-                </div>
-                <div class="box-item">
-                    <a href="diy.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}" alt="次へ"></a>
-                    <a href="diy.html" class="setumei">写真2の説明写真2の説明写真2の説明写真2の説明</a>
-                </div>
-                <div class="box-item">
-                    <a href="diy.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}" alt="次へ"></a>
-                    <a href="diy.html" class="setumei">写真3の説明写真3の説明写真3の説明写真3の説明</a>
-                </div>
-                <div class="box-item">
-                    <a href="diy.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}" alt="次へ"></a>
-                    <a href="diy.html" class="setumei">写真4の説明写真4の説明写真4の説明写真4の説明</a>
-                </div>
-                <div class="box-item">
-                    <a href="diy.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}" alt="次へ"></a>
-                    <a href="diy.html" class="setumei">写真5の説明写真5の説明写真5の説明写真5の説明</a>
-                </div>
-                <div class="box-item">
-                    <a href="diy.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}" alt="次へ"></a>
-                    <a href="diy.html" class="setumei">写真6の説明写真6の説明写真6の説明写真6の説明</a>
-                </div>
-            </div>
-        </section>
-        <div class="more"><a href="diy.html">近くのDIYを探す　＞</a></div>
-        <div>
-            <h2>クリエイター職人の施工例</h2>
-        </div>
-        <section id="sec3">
-            <div class="box-row">
-                <div class="box-item">
-                    <a href="creater.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}"
-                            alt="次へ"></a>
-                    <a href="creater.html" class="setumei">写真1の説明写真1の説明写真1の説明写真1の説明</a>
-                </div>
-                <div class="box-item">
-                    <a href="creater.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}"
-                            alt="次へ"></a>
-                    <a href="creater.html" class="setumei">写真2の説明写真2の説明写真2の説明写真2の説明</a>
-                </div>
-                <div class="box-item">
-                    <a href="creater.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}"
-                            alt="次へ"></a>
-                    <a href="creater.html" class="setumei">写真3の説明写真3の説明写真3の説明写真3の説明</a>
-                </div>
-                <div class="box-item">
-                    <a href="creater.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}"
-                            alt="次へ"></a>
-                    <a href="creater.html" class="setumei">写真4の説明写真4の説明写真4の説明写真4の説明</a>
-                </div>
-                <div class="box-item">
-                    <a href="creater.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}"
-                            alt="次へ"></a>
-                    <a href="creater.html" class="setumei">写真5の説明写真5の説明写真5の説明写真5の説明</a>
-                </div>
-                <div class="box-item">
-                    <a href="creater.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}"
-                            alt="次へ"></a>
-                    <a href="creater.html" class="setumei">写真6の説明写真6の説明写真6の説明写真6の説明</a>
-                </div>
-            </div>
-        </section>
-
-        <div class="more2"><a href="creater.html">近くのクリエイター職人を探す　＞</a></div>
-
-        <footer>
-            <div class="content">
-                <a class="link_button" href="my_login.html">
-                    マイページ
-                </a>
-                <a class="link_button" href="my_account.html">
-                    投稿
-                </a>
-
-            </div>
-        </footer>
+    <div>
+        <h1>旬のDIY投稿</h1>
     </div>
-</body>
+    <section id="sec2">
+        <div class="box-row">
+            <div class="box-item">
+                <a href="diy.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}" alt="次へ"></a>
+                <a href="diy.html" class="setumei">写真1の説明写真1の説明写真1の説明写真1の説明</a>
+            </div>
+            <div class="box-item">
+                <a href="diy.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}" alt="次へ"></a>
+                <a href="diy.html" class="setumei">写真2の説明写真2の説明写真2の説明写真2の説明</a>
+            </div>
+            <div class="box-item">
+                <a href="diy.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}" alt="次へ"></a>
+                <a href="diy.html" class="setumei">写真3の説明写真3の説明写真3の説明写真3の説明</a>
+            </div>
+            <div class="box-item">
+                <a href="diy.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}" alt="次へ"></a>
+                <a href="diy.html" class="setumei">写真4の説明写真4の説明写真4の説明写真4の説明</a>
+            </div>
+            <div class="box-item">
+                <a href="diy.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}" alt="次へ"></a>
+                <a href="diy.html" class="setumei">写真5の説明写真5の説明写真5の説明写真5の説明</a>
+            </div>
+            <div class="box-item">
+                <a href="diy.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}" alt="次へ"></a>
+                <a href="diy.html" class="setumei">写真6の説明写真6の説明写真6の説明写真6の説明</a>
+            </div>
+        </div>
+    </section>
+    <div class="more"><a href="diy.html">近くのDIYを探す　＞</a></div>
+    <div>
+        <h2>クリエイター職人の施工例</h2>
+    </div>
+    <section id="sec3">
+        <div class="box-row">
+            <div class="box-item">
+                <a href="creater.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}" alt="次へ"></a>
+                <a href="creater.html" class="setumei">写真1の説明写真1の説明写真1の説明写真1の説明</a>
+            </div>
+            <div class="box-item">
+                <a href="creater.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}" alt="次へ"></a>
+                <a href="creater.html" class="setumei">写真2の説明写真2の説明写真2の説明写真2の説明</a>
+            </div>
+            <div class="box-item">
+                <a href="creater.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}" alt="次へ"></a>
+                <a href="creater.html" class="setumei">写真3の説明写真3の説明写真3の説明写真3の説明</a>
+            </div>
+            <div class="box-item">
+                <a href="creater.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}" alt="次へ"></a>
+                <a href="creater.html" class="setumei">写真4の説明写真4の説明写真4の説明写真4の説明</a>
+            </div>
+            <div class="box-item">
+                <a href="creater.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}" alt="次へ"></a>
+                <a href="creater.html" class="setumei">写真5の説明写真5の説明写真5の説明写真5の説明</a>
+            </div>
+            <div class="box-item">
+                <a href="creater.html"><img src="{{url_for('static', filename='images/img_2287.jpg')}}" alt="次へ"></a>
+                <a href="creater.html" class="setumei">写真6の説明写真6の説明写真6の説明写真6の説明</a>
+            </div>
+        </div>
+    </section>
 
-</html>
+    <div class="more2"><a href="creater.html">近くのクリエイター職人を探す　＞</a></div>
+
+</div>
+
+
+{% endblock %}
