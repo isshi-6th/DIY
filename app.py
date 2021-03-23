@@ -1,4 +1,5 @@
 from flask import Flask , render_template , request , redirect , session
+import sqlite3
 
 app = Flask(__name__)
 
@@ -19,6 +20,22 @@ def diy():
 @app.route('/creator')
 def creator():
     return render_template('creator.html')
+
+@app.route('/post', methods=["GET"])
+def post():
+    return render_template('post.html')
+
+@app.route('/post', methods=['POST'])
+def add_post():
+    task = request.form.get("task")
+    # ↑()の中は拾ってくる"入力欄"の名前を入れる
+    conn = sqlite3.connect('diy.db')
+    # ↑()の中はデータベースの名前
+    c = conn.cursor()
+    c.execute("INSERT INTO post_list VALUES(null, ?, ?)", (0, task))
+    conn.commit()
+    conn.close()
+    return redirect('/')
 
 if __name__ == "__main__":
     app.run()
