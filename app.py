@@ -27,15 +27,16 @@ def post():
 
 @app.route('/post', methods=['POST'])
 def add_post():
+    img = request.files['img_post'].read()
     task = request.form.get("task")
     # ↑()の中は拾ってくる"入力欄"の名前を入れる
     conn = sqlite3.connect('diy.db')
     # ↑()の中はデータベースの名前
     c = conn.cursor()
-    c.execute("INSERT INTO post_list VALUES(null, ?, ?)", (0, task))
+    c.execute("INSERT INTO post_list VALUES(null, ?, ?, ?)", (0, task, img))
     conn.commit()
     conn.close()
     return redirect('/')
 
 if __name__ == "__main__":
-    app.run()
+    app.run("0.0.0.0", debug=True)

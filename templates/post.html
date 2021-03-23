@@ -6,9 +6,9 @@
     <p>今日のDIYを投稿しよう！</p>
 
     <div class="type">
-        <input type="file" name="example" accept="image/jpeg, image/png">
-
-        <form action="/post" method="post">
+       
+        <form action="/post" method="post" enctype="multipart/form-data">
+            <input type="file" name="img_post" accept="image/jpeg, image/png">
             <!-- <input class="type_post" type="text"  name="task"> -->
             <textarea class="type_post" name="task" cols="50" rows="10" placeholder="こちらに入力してください。"></textarea>
             <input type="submit" name="save" value="送信">
