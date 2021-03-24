@@ -13,9 +13,9 @@
 <body>
     <header>
         <ul>
-            <li><a href="top.html">ホーム</a></li>
-            <li><a href="diy.html">DIY</a></li>
-            <li><a href="creater.html">クリエイター職人</a></li>
+            <li><a href="/">ホーム</a></li>
+            <li><a href="/diy">DIY</a></li>
+            <li><a href="/creator">クリエイター職人</a></li>
             <!-- <li><a href="#sec4">まとめ</a></li> -->
         </ul>
     </header>
@@ -24,11 +24,16 @@
     {% endblock %}
     <footer>
         <div class="content">
-            <a class="link_button" href="my_login.html">
+            <a href="my_user">
                 マイページ
             </a>
-            <a class="link_button" href="my_account.html">
+
+            <a href="/post">
                 投稿
+            </a>
+            
+            <a href="/favorite">
+                お気に入り
             </a>
 
         </div>
