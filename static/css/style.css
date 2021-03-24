@@ -571,6 +571,7 @@ input[type="password"] {
 
 p {
     color: black;
+    text-align: left;
 }
 
 #form .comment4 {
@@ -699,6 +700,7 @@ tbody tr td {
 .user {
     font-weight: bold;
     font-size: 16px;
+    text-align: center;
 }
 
 .creater {
@@ -710,6 +712,7 @@ tbody tr td {
 
 .address {
     font-size: 14px;
+    text-align: center;
 }
 
 p.ordermade {
@@ -775,9 +778,10 @@ p.ordermade {
     text-decoration: none;
     /* position: fixed;
     right: 20px; */
-    top: 200px;
+    top: 190px;
     color: gray;
     text-align: left;
+    font-size: 14px;
 }
 
 .menu__itembox {
@@ -790,6 +794,12 @@ p.ordermade {
     font-weight: bold;
 }
 
-span.back-text {
-    text-align: left;
+p.back-text {
+    margin-left: 10px;
+    font-size: 200px;
+    z-index: 3;
+}
+
+.setumei {
+    font-size: 100px;
 }
