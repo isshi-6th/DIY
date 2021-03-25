@@ -23,7 +23,24 @@
             </ul>
         </header>
     </div>
+    <div class="menu-btn">
+        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+
+    </div>
+    <div class="menu">
+        <div class="menu__itemtitle">設定</div>
+        <div class="menu__itembox"><input type="text" name="name" size="30" value="" placeholder="検索"></div>
+        <a href="/my_user">プロフィール情報</a>
+        <a href="/my_account">アカウント情報</a>
+        <div class="menu__item">通知設定</div>
+        <div class="menu__item">プライバシー設定</div>
+        <div class="menu__item">アクティビティ設定</div>
+        <div class="menu__item">ブロックしたユーザー一覧</div>
+        <div class="menu__item">セキュリティ</div>
+    </div>
+
     {% block content %}
+
 
     {% endblock %}
     <div class="fwrapper">
