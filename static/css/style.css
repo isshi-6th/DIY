@@ -106,6 +106,9 @@ body {
     line-height: 1;
     min-width: 100%;
     -webkit-text-size-adjust: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -129,17 +132,31 @@ img {
     font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", "Meiryo", "HGPｺﾞｼｯｸM", "Osaka", "ＭＳ Ｐゴシック", sans-serif, Century Gothic, Arial;
 }
 
+.hwrapper {
+    width: 100%;
+}
+
 header {
-    height: 30px;
+    margin: ０;
+    max-width: 800px;
+    padding: 0;
+    /* height: 30px;
     width: 100%;
     margin: 0px;
-    padding: 0px;
+    padding: 0px; */
     background-color: #eeeaec;
-    text-align: center;
+    /* text-align: center;
     position: fixed;
     box-sizing: border-box;
     position: fixed;
-    top: 0;
+    top: 0; */
+    position: fixed;
+    /* ヘッダーの固定 */
+    top: 0px;
+    /* 位置(上0px) */
+    left: 0px;
+    /* 位置(右0px) */
+    width: 100%;
 }
 
 header ul {
@@ -179,7 +196,7 @@ div h1 {
     text-align: left;
     font-size: 12px;
     line-height: 35px;
-    margin: 40px 0 0 0;
+    margin: 30px 0 0 0;
     font-weight: bold;
 }
 
@@ -195,7 +212,7 @@ div h2 {
     text-align: left;
     font-size: 12px;
     line-height: 35px;
-    margin: 10px 0 0 0;
+    margin: 0 0 0 0;
     font-weight: bold;
 }
 
@@ -203,7 +220,7 @@ div.more2 {
     text-align: right;
     font-size: 12px;
     line-height: 35px;
-    padding: 0 30px 10px 0;
+    padding: 0 30px 50px 0;
     font-weight: bold;
 }
 
@@ -235,18 +252,41 @@ div.more2 {
     line-height: 1px;
 }
 
-footer {
+.fwrapper {
     width: 100%;
-    margin: 0;
+
+}
+
+footer {
+    margin: auto;
+    max-width: 800px;
+    padding: 0;
+    /* height: 30px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px; */
+    background-color: #eeeaec;
+    /* width: 100%;
+    margin: 0; */
+    position: fixed;
+    /* フッターの固定 */
+    bottom: 0px;
+    /* 位置(下0px) */
+    left: 0px;
+    /* 位置(左0px) */
+    width: 100%;
+    /* 横幅100%　*/
+    /* height: 140px;              /* 縦幅140px * */
 }
 
 
 footer .content {
-    margin: auto;
-    max-width: 800px;
+    margin: 0 50px;
+    /* max-width: 800px; */
     padding: 10px;
     background-color: #eeeaec;
     text-align: center;
+    margin-right: 10px;
 }
 
 /* footer .content .inner {
@@ -281,10 +321,23 @@ footer .content {
     /*文字をグレイに*/
 }
 
-html,
+/* html,
 body {
     height: 100%;
+    width: 100%;
+} */
+
+html,
+body {
+    margin: 0;
+    /* 余白の削除 */
+    padding: 0;
+    /* 余白の削除 */
+    width: 100%;
+    height: 100%;
 }
+
+
 
 #form {
     width: 400px;
@@ -391,7 +444,6 @@ input[type="password"] {
 }
 
 #form .comment3 {
-    color: white;
     text-align: center;
     padding: 40px 0 0 0;
 }
@@ -602,6 +654,7 @@ p {
     border-collapse: collapse;
     width: 100%;
     table-layout: fixed;
+    font-size: 16px;
 }
 
 .table1 th {
@@ -684,6 +737,7 @@ tbody tr td {
 
 #section1-inner {
     text-align: center;
+    padding: 0 0 5px 0;
 }
 
 .profile {
@@ -691,7 +745,6 @@ tbody tr td {
 }
 
 .profile a {
-    color: black;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
@@ -701,6 +754,7 @@ tbody tr td {
     font-weight: bold;
     font-size: 16px;
     text-align: center;
+    margin: 10px auto;
 }
 
 .creater {
@@ -708,6 +762,7 @@ tbody tr td {
     color: white;
     font-size: 14px;
     margin: 0 120px;
+    display: inline-block;
 }
 
 .address {
@@ -721,7 +776,7 @@ p.ordermade {
 
 .menu-btn {
     position: fixed;
-    top: 20px;
+    top: 5px;
     right: 20px;
     z-index: 2;
     width: 20px;
@@ -729,7 +784,7 @@ p.ordermade {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
+    /* background: white; */
     color: #333;
 }
 
@@ -781,7 +836,7 @@ p.ordermade {
     top: 190px;
     color: gray;
     text-align: left;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .menu__itembox {
@@ -801,5 +856,47 @@ p.back-text {
 }
 
 .setumei {
-    font-size: 100px;
+    font-size: 16px;
 }
+
+p.mypage {
+    padding: 0 100px 0 10px;
+}
+
+p.post {
+    padding: 0 10px 0 10px;
+}
+
+p.okiniiri {
+    padding: 0 10px 0 10px;
+}
+
+/* footer {
+    height: 30px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #eeeaec;
+    text-align: center;
+    position: fixed;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+}
+
+footer ul {
+    width: 400px;
+    margin: auto auto;
+    display: flex;
+}
+
+footer li {
+    color: black;
+    width: 25%;
+    line-height: 30px;
+    transition: 0.2s;
+}
+
+header li:hover {
+    color: #111;
+} */
