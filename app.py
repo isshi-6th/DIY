@@ -17,9 +17,27 @@ def favorite():
 def my_login():
     return render_template('my_login.html')
 
-@app.route('/my_account')
+@app.route('/my_account', methods=['GET'])
 def my_account():
     return render_template('my_account.html')
+
+@app.route('/my_account', methods=['POST'])
+def make_account():
+    name = request.form.get("name")
+    mailaddress = request.form.get("mailaddress")
+    pass1 = request.form.get("pass1")
+    pass2 = request.form.get("pass2")
+    if pass1 == pass2:
+        # ↑()の中は拾ってくる"入力欄"の名前(name)を入れる
+        conn = sqlite3.connect('diy.db')
+        # ↑()の中はデータベースの名前
+        c = conn.cursor()
+        c.execute("INSERT INTO user_list VALUES(null, ?, ?, ?, ?)", (name, mailaddress, pass1, pass2))
+        conn.commit()
+        conn.close()
+        return redirect('/my_user')
+    else:
+        return render_template('my_account.html')
 
 @app.route('/my_user')
 def my_user():
@@ -39,9 +57,10 @@ def post():
 
 @app.route('/post', methods=['POST'])
 def add_post():
+    #(GETとPOSTで名前は変える)
     img = request.files['img_post'].read()
     task = request.form.get("task")
-    # ↑()の中は拾ってくる"入力欄"の名前を入れる
+    # ↑()の中は拾ってくる"入力欄"の名前(name)を入れる
     conn = sqlite3.connect('diy.db')
     # ↑()の中はデータベースの名前
     c = conn.cursor()
