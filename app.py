@@ -24,11 +24,11 @@ def my_account():
 @app.route('/my_account', methods=['POST'])
 def make_account():
     name = request.form.get("name")
+    # ↑()の中は拾ってくる"入力欄"の名前(name="○○"の丸の部分)を入れる
     mailaddress = request.form.get("mailaddress")
     pass1 = request.form.get("pass1")
     pass2 = request.form.get("pass2")
     if pass1 == pass2:
-        # ↑()の中は拾ってくる"入力欄"の名前(name)を入れる
         conn = sqlite3.connect('diy.db')
         # ↑()の中はデータベースの名前
         c = conn.cursor()
@@ -38,6 +38,12 @@ def make_account():
         return redirect('/my_user')
     else:
         return render_template('my_account.html')
+        #redirectは（）のなかにapp.pyで定義したリンク名を入れるのに対し、
+        #render_templateは()のなかにhtml名を入れる。
+        #両者の違いは、html(render_tenplate)はどんな人が見ても同じページが表示されるのに対し、
+        #app.pyで定義したリンク名（redirect）はデーターベースを繋げられることで
+        #各ユーザーごとのページを表示することができる
+
 
 @app.route('/my_user')
 def my_user():
