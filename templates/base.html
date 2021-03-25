@@ -8,42 +8,48 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <!-- <script src="{{ url_for('static', filename='js/common.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+</head> -->
 
 <body>
-    <header>
-        <ul>
-            <li><a href="/">ホーム</a></li>
-            <li><a href="/diy">DIY</a></li>
-            <li><a href="/creator">クリエイター職人</a></li>
-            <!-- <li><a href="#sec4">まとめ</a></li> -->
-        </ul>
-    </header>
+    <div class="hwrapper">
+        <header>
+            <ul>
+                <li><a href="/">ホーム</a></li>
+                <li><a href="/diy">DIY</a></li>
+                <li><a href="/creator">クリエイター職人</a></li>
+                <!-- <li><a href="#sec4">まとめ</a></li> -->
+            </ul>
+        </header>
+    </div>
     {% block content %}
 
     {% endblock %}
-    <footer>
-        <div class="content">
-            <a href="my_user">
-                マイページ
-            </a>
+    <div class="fwrapper">
+        <footer>
+            <div class="content">
+                <a class="mypage" href="my_user">
+                    マイページ　　　
+                </a>
 
-            <a href="/post">
-                投稿
-            </a>
-            
-            <a href="/favorite">
-                お気に入り
-            </a>
+                <a class="post" href="/post">
+                    投稿　　　
+                </a>
 
-        </div>
-    </footer>
+                <a class="okiniiri" href="/favorite">
+                    お気に入り　　　
+                </a>
+
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.2.1.min.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/common.js')}}"></script>
 
 
 </body>
-
-<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='js/common.js') }}"></script>
 
 
 </html>
